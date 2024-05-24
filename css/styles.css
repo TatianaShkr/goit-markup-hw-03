@@ -28,7 +28,7 @@ ul {
 /*------------------------------header-----*/
 
 .header-title {
-  border-bottom: 1px #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .title-studio {
@@ -159,6 +159,7 @@ ul {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
+  border: none;
 }
 
 .button:hover {
@@ -180,6 +181,20 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -255,12 +270,13 @@ ul {
 
 .list {
   background: #ffffff;
-  width: calc((100% - 24px*3) / 4);
+  width: calc((100% - 3*24px) / 4);
 }
 
 /*section 4*/
 .portfolio {
-  margin: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
 }
 
@@ -268,10 +284,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
   width: calc((100% - 2*24px) /3);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-portfolio {
@@ -288,6 +306,7 @@ ul {
 .portfolio-box {
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding: 32px 16px;
 }
 
 .name-port {
@@ -296,9 +315,8 @@ ul {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .name-port-title {
@@ -312,6 +330,7 @@ ul {
   padding-bottom: 32px;
   margin-top: 0;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 /*footer*/
