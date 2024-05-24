@@ -19,6 +19,10 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -270,7 +274,7 @@ ul {
 
 .list {
   background: #ffffff;
-  width: calc((100% - 3*24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 /*section 4*/
